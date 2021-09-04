@@ -1,0 +1,30 @@
+@use "../../../styles/mixins";
+
+.Footer {
+	width: 100vw;
+	padding: var(--space-xl);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	font-family: "JetBrains Mono", monospace;
+	text-align: center;
+
+	.linkscontainer {
+		gap: var(--space-2xl);
+		display: none;
+
+		@include mixins.md {
+			display: flex;
+		}
+
+		svg {
+			color: var(--secondary);
+			font-size: var(--text-2xl);
+			transition-duration: var(--quicker);
+
+			&:hover {
+				color: var(--common);
+			}
+		}
+	}
+}

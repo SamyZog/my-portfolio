@@ -1,0 +1,47 @@
+@use "../../../styles/mixins";
+
+.Header {
+	width: 100vw;
+	padding: var(--space-xl);
+	position: fixed;
+	top: 0;
+	left: 0;
+	transition-duration: var(--quicker);
+	backdrop-filter: var(--blur);
+	z-index: var(--close);
+
+	.content {
+		width: 100%;
+		max-width: var(--screen-2xl);
+	}
+
+	.logocontainer {
+		svg {
+			width: var(--space-4xl);
+
+			@include mixins.sm {
+				font-size: var(--text-lg);
+			}
+		}
+	}
+
+	.desktopmenu,
+	.linkscontainer {
+		gap: var(--space-6xl);
+	}
+
+	.desktopmenu {
+		@include mixins.sm {
+			display: none;
+		}
+	}
+
+	.mobilemenucontainer {
+		display: none;
+
+		@include mixins.sm {
+			font-size: var(--text-xl);
+			display: block;
+		}
+	}
+}

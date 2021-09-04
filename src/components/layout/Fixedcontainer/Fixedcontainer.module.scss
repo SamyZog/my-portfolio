@@ -1,0 +1,37 @@
+@use "../../../styles/mixins";
+
+.Fixedcontainer {
+	position: fixed;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	max-width: var(--screen-2xl);
+	max-width: calc(var(--screen-2xl) + (var(--space-xl) * 2));
+	width: 100%;
+	height: 100vh;
+	padding: 0 var(--space-xl);
+	pointer-events: none;
+	will-change: transform;
+
+	.linkscontainer {
+		position: absolute;
+		right: var(--space-xl);
+		top: 50%;
+		transform: translateY(-50%);
+		pointer-events: auto;
+
+		@include mixins.md {
+			display: none;
+		}
+
+		svg {
+			color: var(--secondary);
+			font-size: var(--text-2xl);
+			transition-duration: var(--quicker);
+
+			&:hover {
+				color: var(--common);
+			}
+		}
+	}
+}

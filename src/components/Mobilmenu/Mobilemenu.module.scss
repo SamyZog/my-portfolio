@@ -1,0 +1,25 @@
+.Mobilemenu {
+	height: 100%;
+	padding: var(--space-xl);
+
+	& > * {
+		flex: 1;
+	}
+
+	.logocontainer {
+		svg {
+			width: var(--space-4xl);
+		}
+	}
+
+	.signaturecontainer {
+		align-items: flex-end;
+		font-weight: var(--thin);
+		font-family: "JetBrains Mono", monospace;
+		text-align: center;
+
+		.signature {
+			font-size: var(--text-md);
+		}
+	}
+}
