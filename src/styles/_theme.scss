@@ -1,0 +1,31 @@
+.light {
+	--primary: #f1f1f1;
+	--primary-tint: #e1e1e1;
+	--secondary: #0c0c0c;
+	--secondary-tint: #0a0a0a;
+	--common: #9d4edd;
+	--common-tint: #5a189a;
+	background-image: url("../../public/bg/bglight.svg");
+}
+
+.dark {
+	--primary: #0c0c0c;
+	--primary-tint: #0a0a0a;
+	--secondary: #f1f1f1;
+	--secondary-tint: #e1e1e1;
+	--common: #9d4edd;
+	--common-tint: #5a189a;
+	background-image: url("../../public/bg/bgdark.svg");
+}
+
+body {
+	background-color: var(--primary);
+	background-position: center;
+	background-size: 300% 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+::selection {
+	background-color: var(--common);
+}

@@ -1,0 +1,29 @@
+@mixin sm {
+	@media screen and (max-width: 30em) {
+		@content;
+	}
+}
+
+@mixin md {
+	@media screen and (max-width: 48em) {
+		@content;
+	}
+}
+
+@mixin lg {
+	@media screen and (max-width: 62em) {
+		@content;
+	}
+}
+
+@mixin xl {
+	@media screen and (max-width: 80em) {
+		@content;
+	}
+}
+
+@mixin xxl {
+	@media screen and (max-width: 96em) {
+		@content;
+	}
+}
