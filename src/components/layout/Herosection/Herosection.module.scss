@@ -1,0 +1,51 @@
+@use "../../../styles/mixins";
+
+.Herosection {
+	min-height: inherit;
+	justify-content: center;
+
+	@include mixins.sm {
+		text-align: center;
+	}
+
+	h1 {
+		color: var(--common);
+	}
+
+	h2 {
+		svg {
+			animation-name: heartbeat;
+			animation-duration: 1500ms;
+			animation-iteration-count: infinite;
+
+			color: var(--common);
+		}
+	}
+
+	.calltoaction {
+		margin-top: var(--space-4xl);
+		width: 100%;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+
+		a {
+			min-width: 150px;
+			flex: 0 0 30%;
+
+			@include mixins.sm {
+				flex: 1 1 auto;
+			}
+		}
+	}
+}
+
+@keyframes heartbeat {
+	0%,
+	100% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.2);
+	}
+}

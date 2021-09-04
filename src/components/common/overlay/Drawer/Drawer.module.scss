@@ -1,0 +1,50 @@
+@use "../../../../styles/mixins";
+
+.Drawer {
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100vh;
+	width: 100vw;
+	background-color: var(--opaque-dark);
+	opacity: 0;
+	animation-duration: var(--quicker);
+	animation-name: fade-in;
+	animation-fill-mode: forwards;
+	backdrop-filter: var(--blur);
+	z-index: var(--closest);
+
+	@include mixins.sm {
+		font-size: var(--text-xl);
+	}
+
+	.content {
+		height: 100%;
+		width: 100%;
+		animation-name: slide-in;
+		animation-fill-mode: forwards;
+		animation-duration: var(--quicker);
+		background-color: var(--primary);
+		position: absolute;
+		right: -100%;
+	}
+
+	.drawercontrols {
+		position: absolute;
+		gap: var(--space-md);
+		top: var(--space-lg);
+		right: var(--space-lg);
+	}
+}
+
+@keyframes slide-in {
+	100% {
+		right: 0;
+	}
+}
+
+@keyframes fade-in {
+	100% {
+		opacity: 1;
+	}
+}

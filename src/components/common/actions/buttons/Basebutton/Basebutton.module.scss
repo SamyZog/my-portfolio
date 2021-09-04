@@ -1,0 +1,25 @@
+.Basebutton {
+	border: none;
+	cursor: pointer;
+	border-radius: var(--br);
+	padding: var(--space-sm);
+	line-height: var(--line-none);
+	font: inherit;
+	transition-duration: var(--quicker);
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	gap: var(--space-xs);
+	color: var(--primary);
+	font-family: "JetBrains Mono", monospace;
+	background-color: var(--secondary);
+	text-transform: lowercase;
+
+	&:focus {
+		box-shadow: 0 0 0 var(--space-2xs) var(--common-tint);
+	}
+
+	&:hover {
+		background-color: var(--common);
+	}
+}

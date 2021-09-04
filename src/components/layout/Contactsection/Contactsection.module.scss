@@ -1,0 +1,31 @@
+@use "../../../styles/mixins";
+
+.Contactsection {
+	min-height: inherit;
+	align-items: flex-start;
+	justify-content: center;
+
+	@include mixins.sm {
+		text-align: center;
+	}
+
+	h1 {
+		line-height: var(--line-none);
+	}
+
+	.calltoaction {
+		margin-top: var(--space-4xl);
+		width: 100%;
+		justify-content: flex-start;
+
+		@include mixins.sm {
+			justify-content: center;
+			flex-wrap: wrap-reverse;
+		}
+	}
+
+	.action {
+		min-width: 100px;
+		flex: 0 0 25%;
+	}
+}

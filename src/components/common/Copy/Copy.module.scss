@@ -1,0 +1,14 @@
+.Copy {
+	font-family: "JetBrains Mono", monospace;
+	cursor: pointer;
+	user-select: none;
+	background-color: transparent;
+	border: none;
+	color: inherit;
+	transition-duration: var(--quicker);
+
+	&:focus {
+		outline: 0.2em dashed var(--common);
+		outline-offset: var(--space-2xs);
+	}
+}

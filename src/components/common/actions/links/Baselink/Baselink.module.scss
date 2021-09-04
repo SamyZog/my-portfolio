@@ -1,0 +1,28 @@
+.Baselink {
+	&:link,
+	&:visited {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		gap: var(--space-xs);
+		line-height: var(--line-none);
+		text-transform: lowercase;
+		font-family: "JetBrains Mono", monospace;
+		color: var(--common);
+		transition-duration: var(--quicker);
+		font-weight: var(--bold);
+	}
+
+	&:visited {
+		color: var(--common-tint);
+	}
+
+	&:visited[href^="#"] {
+		color: var(--common);
+	}
+
+	&:focus {
+		outline: 0.2em dashed var(--common);
+		outline-offset: var(--space-2xs);
+	}
+}
