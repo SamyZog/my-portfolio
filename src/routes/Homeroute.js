@@ -9,17 +9,14 @@ const Homeroute = (props) => {
 	const observerRef = useRef();
 
 	useEffect(() => {
-		observerRef.current = new IntersectionObserver(
-			(changes, observer) => {
-				changes.forEach((change) => {
-					if (change.isIntersecting) {
-						change.target.classList.add("appear");
-						observer.unobserve(change.target);
-					}
-				});
-			},
-			{ threshold: 0.35 },
-		);
+		observerRef.current = new IntersectionObserver((changes, observer) => {
+			changes.forEach((change) => {
+				if (change.isIntersecting) {
+					change.target.classList.add("appear");
+					observer.unobserve(change.target);
+				}
+			});
+		});
 
 		document.querySelectorAll("section > div").forEach((element) => {
 			observerRef.current.observe(element);

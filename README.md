@@ -26,13 +26,6 @@ This web app is hosted on [Vercel](https://vercel.com/)
 -   [Sass](https://sass-lang.com/)
 -   [SVGR](https://react-svgr.com/)
 
-<<<<<<< HEAD
-=======
-<h2 id="features">Features</h2>
-
-- Custom reusable elements
-
->>>>>>> fcea71b2d3a230c0042a749089f806532ecfc4fb
 <h2 id="authors">Authors</h2>
 
 -   [@SamyZog](https://www.github.com/SamyZog)
