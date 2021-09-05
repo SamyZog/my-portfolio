@@ -16,6 +16,7 @@
 	font-family: "JetBrains Mono", monospace;
 	background-color: var(--secondary);
 	text-transform: lowercase;
+	font-weight: var(--bold);
 
 	&:focus {
 		box-shadow: 0 0 0 var(--space-2xs) var(--common-tint);

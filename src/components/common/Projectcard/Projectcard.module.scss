@@ -5,6 +5,7 @@
 	color: var(--secondary);
 	height: 100%;
 	padding: var(--space-xl);
+	gap: var(--space-md);
 
 	& {
 		border-radius: var(--br);
@@ -36,7 +37,7 @@
 
 		a {
 			color: var(--secondary);
-			font-size: var(--text-xl);
+			font-size: var(--text-2xl);
 		}
 	}
 
@@ -52,6 +53,7 @@
 
 	.description {
 		flex: 1;
+		font-size: var(--text-md);
 	}
 
 	.techstack {

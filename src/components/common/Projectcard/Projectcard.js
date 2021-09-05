@@ -32,6 +32,7 @@ const Projectcard = ({ description, displayName, githubUrl, repositoryUrl, image
 			<Text as="h2">{displayName}</Text>
 			<Divider />
 			<Imagepreview name={name} />
+			<Divider />
 			<Text className={styles.description}>{description}</Text>
 			<Hstack className={styles.techstack}>
 				{libraries.map((library) => {

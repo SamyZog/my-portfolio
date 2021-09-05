@@ -6,7 +6,7 @@ export default function Home() {
 		<>
 			<Head>
 				<title>Samy Zogeyb | Front-End Web Developer</title>
-				<meta property="og:title" content="Samy Zogeyb Resume | Front-End Web Developer" />
+				<meta property="og:title" content="Samy Zogeyb | Front-End Web Developer" />
 				<meta property="og:type" content="website" />
 				<meta property="og:url" content="https://www.samyzogeyb.com" />
 				<meta property="og:image" content="/og-image.png" />

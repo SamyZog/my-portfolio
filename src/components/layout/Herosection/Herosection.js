@@ -23,7 +23,7 @@ const Herosection = (props) => {
 					<Basebutton as="a" href="#contact">
 						CONTACT ME <RiChat4Line />
 					</Basebutton>
-					<Basebutton as="a" href="/">
+					<Basebutton as="a" target="_blank" href="/files/Samy Zogeyb Resume.pdf">
 						DOWNLOAD CV <RiProfileLine />
 					</Basebutton>
 				</Hstack>
