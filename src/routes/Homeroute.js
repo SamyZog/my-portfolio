@@ -18,7 +18,7 @@ const Homeroute = (props) => {
 					}
 				});
 			},
-			{ threshold: 0.25 },
+			{ threshold: 0.35 },
 		);
 
 		document.querySelectorAll("section > div").forEach((element) => {

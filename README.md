@@ -4,7 +4,6 @@
 -   [Demo](#demo)
 -   [Hosting](#host)
 -   [Tech Stack / Dependencies](#deps)
--   [Features](#features)
 -   [Authors](#authors)
 
 <h2 id="title">Samy Zogeyb's Portfolio</h2>
@@ -26,10 +25,6 @@ This web app is hosted on [Vercel](https://vercel.com/)
 -   [React](https://reactjs.org/)
 -   [Sass](https://sass-lang.com/)
 -   [SVGR](https://react-svgr.com/)
-
-<h2 id="features">Features</h2>
-
-// list of features
 
 <h2 id="authors">Authors</h2>
 

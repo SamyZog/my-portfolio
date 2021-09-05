@@ -1,0 +1,8 @@
+.Scrolltop {
+	position: absolute;
+	bottom: var(--space-xl);
+	right: var(--space-xl);
+	color: var(--common);
+	z-index: 10000;
+	pointer-events: auto;
+}

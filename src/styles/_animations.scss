@@ -6,13 +6,13 @@
 }
 
 .appear {
-	animation-name: slide-up;
+	animation-name: scale-up;
 	animation-duration: var(--slow);
 	animation-fill-mode: forwards;
 	animation-delay: var(--quicker);
 }
 
-@keyframes slide-up {
+@keyframes scale-up {
 	100% {
 		opacity: 1;
 		transform: scale(1);
