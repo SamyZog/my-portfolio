@@ -29,7 +29,7 @@ This web app is hosted on [Vercel](https://vercel.com/)
 
 <h2 id="features">Features</h2>
 
-// list of features
+- Custom reusable elements
 
 <h2 id="authors">Authors</h2>
 
