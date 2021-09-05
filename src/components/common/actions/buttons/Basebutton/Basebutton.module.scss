@@ -1,3 +1,5 @@
+@use '../../../../../styles/mixins';
+
 .Basebutton {
 	border: none;
 	cursor: pointer;
@@ -21,5 +23,11 @@
 
 	&:hover {
 		background-color: var(--common);
+	}
+
+	@include mixins.non-hover {
+		&:hover {
+			background-color: var(--secondary);
+		}
 	}
 }

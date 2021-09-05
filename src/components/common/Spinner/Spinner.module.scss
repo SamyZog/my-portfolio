@@ -1,0 +1,13 @@
+.Spinner {
+	animation-name: spin;
+	animation-iteration-count: infinite;
+	animation-duration: var(--quick);
+	animation-timing-function: linear;
+	font-size: var(--text-3xl);
+}
+
+@keyframes spin {
+	100% {
+		transform: rotate(1turn);
+	}
+}

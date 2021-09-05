@@ -1,3 +1,19 @@
+@use '../../../styles/mixins';
+
 .Sociallinks {
-	list-style: none;
+	svg {
+		color: var(--secondary);
+		font-size: var(--text-2xl);
+		transition-duration: var(--quicker);
+
+		&:hover {
+			color: var(--common);
+		}
+
+		@include mixins.non-hover {
+			&:hover {
+				color: var(--secondary);
+			}
+		}
+	}
 }

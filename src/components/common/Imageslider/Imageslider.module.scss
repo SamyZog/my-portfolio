@@ -1,0 +1,75 @@
+@use '../../../styles/mixins';
+
+.Imageslider {
+	overflow: hidden;
+	aspect-ratio: 16/9;
+	position: relative;
+	width: 100%;
+
+	.track {
+		will-change: transform;
+		gap: 0;
+		transition-duration: var(--quicker);
+
+		img {
+			width: 100%;
+			display: inline-block;
+			object-position: center;
+			object-fit: contain;
+			aspect-ratio: 16/9;
+			flex: 1 0 auto;
+		}
+	}
+
+	.indicatorcontainer {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		padding: var(--space-md);
+		bottom: 0;
+
+		.indicator {
+			border-radius: 50%;
+			background-color: var(--primary);
+			padding: var(--space-2xs);
+		}
+	}
+
+	.invisiblegrid {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		gap: 0;
+
+		@include mixins.non-hover {
+			display: none;
+		}
+
+		.griditem {
+			flex: 1 1 auto;
+			height: 100%;
+		}
+	}
+
+	.prevbutton,
+	.nextbutton {
+		display: none;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	@include mixins.non-hover {
+		display: flex;
+	}
+
+	.prevbutton {
+		left: var(--space-2xs);
+	}
+
+	.nextbutton {
+		right: var(--space-xs);
+	}
+}

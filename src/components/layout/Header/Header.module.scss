@@ -6,9 +6,26 @@
 	position: fixed;
 	top: 0;
 	left: 0;
-	transition-duration: var(--quicker);
+	transition-duration: var(--quick);
 	backdrop-filter: var(--blur);
 	z-index: var(--close);
+	transform: translateY(-100%);
+	animation-name: slide-in;
+	animation-duration: var(--quick);
+	animation-fill-mode: forwards;
+	outline: var(--outline);
+
+	& > * {
+		pointer-events: none;
+	}
+
+	&:hover {
+		opacity: 1 !important;
+	}
+
+	&:hover * {
+		pointer-events: auto;
+	}
 
 	.content {
 		width: 100%;
@@ -43,5 +60,11 @@
 			font-size: var(--text-xl);
 			display: block;
 		}
+	}
+}
+
+@keyframes slide-in {
+	100% {
+		transform: translateY(0);
 	}
 }

@@ -1,2 +1,32 @@
+@use '../../../styles/mixins';
+
 .Portfoliosection {
+	max-width: 100ch;
+	padding-top: var(--space-7xl);
+	padding-bottom: var(--space-7xl);
+	animation-delay: 0ms !important;
+	min-height: 100vh;
+
+	h1 {
+		line-height: var(--line-none);
+
+		@include mixins.sm {
+			text-align: center;
+		}
+	}
+
+	.content {
+		justify-content: center;
+		min-height: inherit;
+	}
+
+	.grid {
+		list-style: none;
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+		grid-template-rows: 1fr;
+		grid-auto-rows: 1fr;
+		gap: var(--space-lg);
+	}
 }

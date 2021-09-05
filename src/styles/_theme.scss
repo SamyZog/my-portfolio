@@ -2,19 +2,21 @@
 	--primary: #f1f1f1;
 	--primary-tint: #e1e1e1;
 	--secondary: #0c0c0c;
-	--secondary-tint: #0a0a0a;
+	--secondary-tint: #1f252d;
 	--common: #9d4edd;
 	--common-tint: #5a189a;
+	--outline: 1px solid rgba(0, 0, 0, 0.05);
 	background-image: url("../../public/bg/bglight.svg");
 }
 
 .dark {
 	--primary: #0c0c0c;
-	--primary-tint: #0a0a0a;
+	--primary-tint: #1f252d;
 	--secondary: #f1f1f1;
 	--secondary-tint: #e1e1e1;
 	--common: #9d4edd;
 	--common-tint: #5a189a;
+	--outline: 1px solid rgba(255, 255, 255, 0.05);
 	background-image: url("../../public/bg/bgdark.svg");
 }
 

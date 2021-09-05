@@ -1,3 +1,10 @@
 .Section {
 	min-height: 100vh;
+
+	& > * {
+		will-change: transform;
+		opacity: 0;
+		transform: scale(0.98);
+		transform-origin: bottom;
+	}
 }

@@ -1,0 +1,40 @@
+@use '../../../../styles/mixins';
+
+.Modal {
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100vh;
+	width: 100vw;
+	background-color: var(--opaque-dark);
+	opacity: 0;
+	animation-duration: var(--quicker);
+	animation-name: fade-in;
+	animation-fill-mode: forwards;
+	backdrop-filter: var(--blur);
+	z-index: var(--closest);
+	padding: var(--space-lg);
+
+	.content {
+		border-radius: var(--br);
+		position: relative;
+		max-width: var(--screen-xl);
+		width: 100%;
+		padding: var(--space-xl);
+		background-color: var(--primary-tint);
+		box-shadow: var(--shadow);
+		overflow: hidden;
+	}
+
+	.closebutton {
+		position: absolute;
+		top: var(--space-lg);
+		right: var(--space-lg);
+	}
+}
+
+@keyframes fade-in {
+	100% {
+		opacity: 1;
+	}
+}

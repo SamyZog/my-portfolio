@@ -24,11 +24,7 @@ const Header = (props) => {
 	}, []);
 
 	return (
-		<Center
-			as="header"
-			className={styles.Header}
-			style={{ opacity: visible ? 1 : 0, pointerEvents: visible ? "auto" : "none" }}
-		>
+		<Center as="header" className={styles.Header} style={{ opacity: visible ? 1 : 0 }}>
 			<Hstack className={styles.content}>
 				<Routelink href="/" className={styles.logocontainer}>
 					<Logo title="Logo" />

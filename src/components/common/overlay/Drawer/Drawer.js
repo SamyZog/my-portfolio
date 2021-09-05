@@ -13,7 +13,7 @@ const Drawer = ({ children, onClose, selector, ...props }) => {
 	const overlayRef = useRef();
 
 	const closeDrawer = () => {
-		const animation = { duration: 200, easing: "ease-in" };
+		const animation = { duration: 300, easing: "ease-in" };
 		drawerRef.current
 			.animate({ transform: "translate(100%)", opacity: 0 }, animation)
 			.finished.then(() => onClose());

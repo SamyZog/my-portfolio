@@ -16,15 +16,5 @@
 		@include mixins.md {
 			display: flex;
 		}
-
-		svg {
-			color: var(--secondary);
-			font-size: var(--text-2xl);
-			transition-duration: var(--quicker);
-
-			&:hover {
-				color: var(--common);
-			}
-		}
 	}
 }
