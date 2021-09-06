@@ -4,6 +4,7 @@ import Box from "../../common/blocks/Box/Box";
 import Divider from "../../common/blocks/Divider/Divider";
 import Vstack from "../../common/blocks/Vstack/Vstack";
 import Projectcard from "../../common/Projectcard/Projectcard";
+import Scrollindicator from "../../common/Scrollindicator/Scrollindicator";
 import Section from "../../common/Section/Section";
 import Spinner from "../../common/Spinner/Spinner";
 import Text from "../../common/typography/Text/Text";
@@ -55,6 +56,7 @@ const Portfoliosection = (props) => {
 						)}
 				</Box>
 			</Vstack>
+			<Scrollindicator />
 		</Section>
 	);
 };

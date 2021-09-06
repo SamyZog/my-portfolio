@@ -2,6 +2,7 @@ import { RiChat4Line, RiHeart3Fill, RiProfileLine } from "react-icons/ri";
 import Basebutton from "../../common/actions/buttons/Basebutton/Basebutton";
 import Hstack from "../../common/blocks/Hstack/Hstack";
 import Vstack from "../../common/blocks/Vstack/Vstack";
+import Scrollindicator from "../../common/Scrollindicator/Scrollindicator";
 import Section from "../../common/Section/Section";
 import Text from "../../common/typography/Text/Text";
 import styles from "./Herosection.module.scss";
@@ -28,6 +29,7 @@ const Herosection = (props) => {
 					</Basebutton>
 				</Hstack>
 			</Vstack>
+			<Scrollindicator />
 		</Section>
 	);
 };

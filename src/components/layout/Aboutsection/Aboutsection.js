@@ -2,6 +2,7 @@ import Baselink from "../../common/actions/links/Baselink/Baselink";
 import Box from "../../common/blocks/Box/Box";
 import Divider from "../../common/blocks/Divider/Divider";
 import Vstack from "../../common/blocks/Vstack/Vstack";
+import Scrollindicator from "../../common/Scrollindicator/Scrollindicator";
 import Section from "../../common/Section/Section";
 import Text from "../../common/typography/Text/Text";
 import styles from "./Aboutsection.module.scss";
@@ -48,6 +49,7 @@ const Aboutsection = (props) => {
 					<li>Chakra-ui</li>
 				</Box>
 			</Vstack>
+			<Scrollindicator />
 		</Section>
 	);
 };
