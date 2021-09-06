@@ -17,7 +17,7 @@ const Herosection = (props) => {
 					I <RiHeart3Fill title="Love" /> creating awesome stuff for the Web
 				</Text>
 				<Text>
-					I&apos;m a <strong>Front-End Developer</strong> that loves making awesome things with{" "}
+					I&apos;m a <strong>Front-End Developer</strong> who loves making awesome things with{" "}
 					<strong>JavaScript</strong> & <strong>React</strong>
 				</Text>
 				<Hstack className={styles.calltoaction}>
