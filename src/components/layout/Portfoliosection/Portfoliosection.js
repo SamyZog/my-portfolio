@@ -22,7 +22,7 @@ const Portfoliosection = (props) => {
 	return (
 		<Section id="portfolio" className={styles.Portfoliosection}>
 			<Vstack className={styles.content}>
-				<Text as="h1">Portoflio</Text>
+				<Text as="h1">Portfolio</Text>
 				<Divider />
 				{!projects && <Spinner />}
 				<Box as="ul" className={styles.grid}>
