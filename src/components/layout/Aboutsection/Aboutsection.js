@@ -48,8 +48,8 @@ const Aboutsection = (props) => {
 					<li>Firebase</li>
 					<li>Chakra-ui</li>
 				</Box>
+				<Scrollindicator />
 			</Vstack>
-			<Scrollindicator />
 		</Section>
 	);
 };

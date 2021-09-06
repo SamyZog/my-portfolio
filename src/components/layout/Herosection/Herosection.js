@@ -28,8 +28,8 @@ const Herosection = (props) => {
 						DOWNLOAD CV <RiProfileLine />
 					</Basebutton>
 				</Hstack>
+				<Scrollindicator />
 			</Vstack>
-			<Scrollindicator />
 		</Section>
 	);
 };

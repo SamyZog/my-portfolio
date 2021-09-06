@@ -1,6 +1,6 @@
 .Section {
 	min-height: 100vh;
-	position: relative;
+	min-height: calc(var(--vh, 1vh) * 100);
 
 	& > * {
 		will-change: transform;

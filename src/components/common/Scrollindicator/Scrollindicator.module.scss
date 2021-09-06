@@ -1,8 +1,6 @@
+@use '../../../styles/mixins';
+
 .Scrollindicator {
-	position: absolute;
-	bottom: var(--space-lg);
-	left: 50%;
-	transform: translateX(-50%);
 	gap: var(--space-3xs);
 	font-size: var(--text-xl);
 

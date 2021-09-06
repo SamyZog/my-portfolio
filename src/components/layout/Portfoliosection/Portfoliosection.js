@@ -55,8 +55,8 @@ const Portfoliosection = (props) => {
 							},
 						)}
 				</Box>
+				<Scrollindicator />
 			</Vstack>
-			<Scrollindicator />
 		</Section>
 	);
 };
