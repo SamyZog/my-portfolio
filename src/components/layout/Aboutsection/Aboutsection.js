@@ -23,7 +23,7 @@ const Aboutsection = (props) => {
 					>
 						Saratov, Russia
 					</Baselink>{" "}
-					(with possibility of relocation).
+					(open to relocation).
 				</Text>
 				<Text>I speak Russian (fluent), Arabic (fluent) and French (conversational).</Text>
 				<Text>
